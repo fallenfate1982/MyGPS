@@ -1,0 +1,14 @@
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\bin\Debug\AlertService.exe.config
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\bin\Debug\AlertService.exe
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\bin\Debug\AlertService.pdb
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\bin\Debug\GTSBizObjects.dll
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\bin\Debug\TrackerDataStorage.dll
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\bin\Debug\TrackerDataStorage.pdb
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\obj\Debug\AlertService.csprojResolveAssemblyReference.cache
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\obj\Debug\AlertService.ServiceStop.resources
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\obj\Debug\AlertService.csproj.GenerateResource.Cache
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\obj\Debug\AlertService.exe
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\AlertService\obj\Debug\AlertService.pdb
+C:\Temp\MyGps2\AlertService\obj\Debug\AlertService.csprojResolveAssemblyReference.cache
+C:\Temp\MyGps2\AlertService\obj\Debug\AlertService.ServiceStop.resources
+C:\Temp\MyGps2\AlertService\obj\Debug\AlertService.csproj.GenerateResource.Cache

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<configuration>
+  <system.diagnostics>
+    <trace>
+      <listeners>
+        <add name="Console" type="System.Diagnostics.ConsoleTraceListener"/>
+        <add name="File" type="System.Diagnostics.TextWriterTraceListener" initializeData="debug.txt"/>
+      </listeners>
+    </trace>
+    
+  </system.diagnostics>
+  <appSettings>
+    <add key="Server_Port" value="3333"/>
+  </appSettings>
+  <connectionStrings>
+    <add name="GPSTrackerEntities" connectionString="metadata=res://*/GPSTracker.csdl|res://*/GPSTracker.ssdl|res://*/GPSTracker.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=FALLENFATE4994\SQL2K5;Initial Catalog=GPSTracker;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient"/>
+    <add name="GPSTrackerEntities1" connectionString="metadata=res://*/TrackerDataStorage.csdl|res://*/TrackerDataStorage.ssdl|res://*/TrackerDataStorage.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=FALLENFATE4994\SQL2K5;Initial Catalog=GPSTracker;Integrated Security=True;MultipleActiveResultSets=True&quot;" providerName="System.Data.EntityClient"/>
+
+  </connectionStrings>
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5"/></startup></configuration>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6369B141-C22B-4059-BF88-D30D5BD46BA9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GTSBizObjects</RootNamespace>
+    <AssemblyName>GTSBizObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Device" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CellLocationMessage.cs" />
+    <Compile Include="CellTracker.cs" />
+    <Compile Include="Events\Enums.cs" />
+    <Compile Include="Events\Hepler.cs" />
+    <Compile Include="Events\TrackerEvents\EngineCutOff.cs" />
+    <Compile Include="Events\TrackerEvents\EngineCutOn.cs" />
+    <Compile Include="Events\TrackerEvents\EnterLocation.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="Events\TrackerEvents\ExcessiveIdling.cs" />
+    <Compile Include="Events\TrackerEvents\ExitLocation.cs" />
+    <Compile Include="Events\TrackerEvents\ExternalPowerCut.cs" />
+    <Compile Include="Events\TrackerEvents\GPSAntennaCut.cs" />
+    <Compile Include="Events\TrackerEvents\GPSBlindAreaEntered.cs" />
+    <Compile Include="Events\TrackerEvents\GPSBlindAreaExited.cs" />
+    <Compile Include="Events\TrackerEvents\InputActive.cs" />
+    <Compile Include="Events\TrackerEvents\InputInactive.cs" />
+    <Compile Include="Events\TrackerEvents\LowBattery.cs" />
+    <Compile Include="Events\Management.cs" />
+    <Compile Include="Events\TrackerEvents\OutputActive.cs" />
+    <Compile Include="Events\TrackerEvents\OutputInactive.cs" />
+    <Compile Include="Events\TrackerEvents\Speeding.cs" />
+    <Compile Include="Events\TrackerEvents\TrackerAlarms.cs" />
+    <Compile Include="Events\TrackerEvents\TrackerEvent.cs" />
+    <Compile Include="Events\TrackerEvents\TrackerTurnedOn.cs" />
+    <Compile Include="ExceptionHandler.cs" />
+    <Compile Include="GeoFence.cs" />
+    <Compile Include="GPS518.cs" />
+    <Compile Include="GPS518LocationMessage.cs" />
+    <Compile Include="GPSTrackerAnalogInputState.cs" />
+    <Compile Include="GPSTrackerDigitalInputState.cs" />
+    <Compile Include="GPSTrackerOutput.cs" />
+    <Compile Include="GTSBOManagement.cs" />
+    <Compile Include="GTSLocationMessageHistory.cs" />
+    <Compile Include="IGPSTracker.cs" />
+    <Compile Include="LimeRadarManager.cs" />
+    <Compile Include="LimeRCellLocationMessage.cs" />
+    <Compile Include="LimeRCellTracker.cs" />
+    <Compile Include="LinkedTrackers.cs" />
+    <Compile Include="LinkManager.cs" />
+    <Compile Include="LocationMessageCollection.cs" />
+    <Compile Include="PanicLocationMessage.cs" />
+    <Compile Include="PanicTracker.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GTSBusinessObjects.cs" />
+    <Compile Include="ReverseGeo.cs" />
+    <Compile Include="TrackerInfo.cs" />
+    <Compile Include="TrackerRelationManager.cs" />
+    <Compile Include="Utilities.cs" />
+    <Compile Include="VT300.cs" />
+    <Compile Include="VT310e.cs" />
+    <Compile Include="VT300LocationMessage.cs" />
+    <Compile Include="VT310eAlarmLocationMessage.cs" />
+    <Compile Include="VT340.cs" />
+    <Compile Include="VT340AlarmLocationMessage.cs" />
+    <Compile Include="VT340LocationMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrackerDataStorage\TrackerDataStorage.csproj">
+      <Project>{DFD330C8-AEAF-48E3-A980-1A6F00322CA6}</Project>
+      <Name>TrackerDataStorage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

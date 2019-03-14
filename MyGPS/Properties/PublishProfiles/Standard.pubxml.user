@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>02/16/2013 09:20:58</publishTime>
+    </File>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>02/16/2013 09:21:00</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>02/16/2013 09:21:00</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>02/16/2013 09:21:00</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>02/16/2013 09:21:00</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>02/16/2013 09:21:00</publishTime>
+    </File>
+    <File Include="bin/GTSBizObjects.dll">
+      <publishTime>10/28/2013 23:34:40</publishTime>
+    </File>
+    <File Include="bin/MyGPS.dll">
+      <publishTime>10/28/2013 23:34:50</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/20/2012 22:45:32</publishTime>
+    </File>
+    <File Include="bin/TrackerDataStorage.dll">
+      <publishTime>10/23/2013 10:58:00</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/date_default.css">
+      <publishTime>08/06/2011 13:27:28</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/ie6.css">
+      <publishTime>10/07/2010 20:45:34</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/bars.jpg">
+      <publishTime>07/20/2012 20:56:42</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/bar_green.png">
+      <publishTime>07/20/2012 21:10:38</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/bar_red.png">
+      <publishTime>07/20/2012 21:09:58</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/body-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/box-b.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/box-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/box-bg2.gif">
+      <publishTime>06/27/2012 13:32:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/box-separator.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/box-t.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/col-separator.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/cols-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/details.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/footer-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/fuel.jpg">
+      <publishTime>07/23/2012 14:54:40</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker.png">
+      <publishTime>06/11/2012 21:39:12</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_north_north_east.png">
+      <publishTime>06/11/2012 22:24:14</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_north_north_east_2.png">
+      <publishTime>06/12/2012 16:01:12</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_south.png">
+      <publishTime>06/11/2012 21:45:56</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_south_2.png">
+      <publishTime>06/12/2012 15:56:24</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_south_2_high.png">
+      <publishTime>06/13/2012 22:03:24</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_south_high.png">
+      <publishTime>06/12/2012 17:43:22</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_south_south_west.png">
+      <publishTime>06/12/2012 14:07:22</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/green_marker_south_south_west_2.png">
+      <publishTime>06/12/2012 15:52:30</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/header-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/history_marker.png">
+      <publishTime>06/21/2012 23:28:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/logo - Copy.gif">
+      <publishTime>05/30/2012 16:39:34</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/logo.gif">
+      <publishTime>07/23/2012 18:47:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/more-b.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/more-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/more-t.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/nav-active.gif">
+      <publishTime>06/07/2012 15:40:00</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/red_marker - Copy.png">
+      <publishTime>06/06/2012 19:08:26</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/red_marker.png">
+      <publishTime>06/12/2012 14:08:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/red_marker_2.png">
+      <publishTime>06/12/2012 14:40:24</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/slide-bg.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/slider-nav.gif">
+      <publishTime>10/07/2010 20:45:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/stop_disabled.png">
+      <publishTime>07/20/2012 22:21:14</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/stop_green.png">
+      <publishTime>07/20/2012 21:48:58</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/stop_red.png">
+      <publishTime>07/20/2012 22:09:32</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/temp.jpg">
+      <publishTime>07/23/2012 14:55:00</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/images/Tick.png">
+      <publishTime>05/30/2012 20:11:08</publishTime>
+    </File>
+    <File Include="GPS-stubs/css/style.css">
+      <publishTime>07/23/2012 15:59:22</publishTime>
+    </File>
+    <File Include="GPS-stubs/history.html">
+      <publishTime>07/23/2012 12:14:18</publishTime>
+    </File>
+    <File Include="GPS-stubs/img/basic/x.png">
+      <publishTime>11/05/2010 09:11:48</publishTime>
+    </File>
+    <File Include="GPS-stubs/index.html">
+      <publishTime>07/23/2012 12:13:26</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/basic.js">
+      <publishTime>07/23/2012 15:13:18</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/glDatePicker.js">
+      <publishTime>06/26/2012 13:14:00</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/glDatePicker.min.js">
+      <publishTime>02/04/2012 12:15:04</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/gmap3.min.js">
+      <publishTime>11/18/2011 21:14:22</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery-1.4.2.min.js">
+      <publishTime>10/07/2010 20:45:34</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery-1.4.4.min.js">
+      <publishTime>08/23/2011 04:23:38</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery-1.7.2.min.js">
+      <publishTime>04/17/2012 08:21:46</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery-func.js">
+      <publishTime>10/07/2010 20:45:34</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery-ui-1.8.21.custom.min.js">
+      <publishTime>06/05/2012 12:03:26</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery.jcarousel.js">
+      <publishTime>10/07/2010 20:45:34</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/jquery.simplemodal.js">
+      <publishTime>11/05/2010 14:18:06</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/markerwithlabel.js">
+      <publishTime>08/23/2011 04:23:38</publishTime>
+    </File>
+    <File Include="GPS-stubs/js/moment.min.js">
+      <publishTime>06/28/2012 13:56:26</publishTime>
+    </File>
+    <File Include="GPS-stubs/reports.html">
+      <publishTime>03/18/2013 07:14:02</publishTime>
+    </File>
+    <File Include="GPS-stubs/vehicle.html">
+      <publishTime>03/18/2013 07:19:36</publishTime>
+    </File>
+    <File Include="History.aspx">
+      <publishTime>10/28/2013 19:15:49</publishTime>
+    </File>
+    <File Include="Images/body-bg.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/box-b.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/box-bg.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/box-bg2.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/box-separator.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/box-t.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/button_background.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/footer-bg.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/header-bg.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>10/27/2013 16:22:22</publishTime>
+    </File>
+    <File Include="Images/marker_east.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_north.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_north_east.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_north_west.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_south.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_south_east.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_south_west.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_stop.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/marker_west.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/nav-active.png">
+      <publishTime>02/16/2013 09:21:30</publishTime>
+    </File>
+    <File Include="Images/Web.config">
+      <publishTime>10/27/2013 20:52:01</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>10/28/2013 15:16:35</publishTime>
+    </File>
+    <File Include="Login.Master">
+      <publishTime>02/16/2013 09:21:02</publishTime>
+    </File>
+    <File Include="MyTrack.aspx">
+      <publishTime>10/28/2013 22:12:28</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>02/16/2013 09:21:02</publishTime>
+    </File>
+    <File Include="Scripts/glDatePicker.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/gmap3.min.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.2.min.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.21.custom.min.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Scripts/markerwithlabel.js">
+      <publishTime>02/16/2013 09:21:22</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>10/27/2013 15:43:21</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>10/27/2013 18:15:39</publishTime>
+    </File>
+    <File Include="Styles/Web.config">
+      <publishTime>10/27/2013 20:51:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/28/2013 23:34:54</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

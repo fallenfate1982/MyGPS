@@ -1,0 +1,628 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GPSTrackerModelStoreContainer" CdmEntityContainer="GPSTrackerEntities1">
+    <EntitySetMapping Name="AdministrativeUsers">
+      <EntityTypeMapping TypeName="GPSTrackerModel.AdministrativeUser">
+        <MappingFragment StoreEntitySet="AdministrativeUser">
+          <ScalarProperty Name="ClearanceLevel" ColumnName="ClearanceLevel" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alerts">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Alert">
+        <MappingFragment StoreEntitySet="Alert">
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="EmailAlert" ColumnName="EmailAlert" />
+          <ScalarProperty Name="SmsAlert" ColumnName="SmsAlert" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AlertOnAlarm" ColumnName="AlertOnAlarm" />
+          <ScalarProperty Name="AlertOnLowBattery" ColumnName="AlertOnLowBattery" />
+          <ScalarProperty Name="AlertOnGeofenceLeave" ColumnName="AlertOnGeofenceLeave" />
+          <ScalarProperty Name="AlertOnGeofenceEnter" ColumnName="AlertOnGeofenceEnter" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="AlertName" ColumnName="AlertName" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertFireds">
+      <EntityTypeMapping TypeName="GPSTrackerModel.AlertFired">
+        <MappingFragment StoreEntitySet="AlertFired">
+          <ScalarProperty Name="LocationMessageId" ColumnName="LocationMessageId" />
+          <ScalarProperty Name="MessageAlertId" ColumnName="MessageAlertId" />
+          <ScalarProperty Name="FenceId" ColumnName="FenceId" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="IsExit" ColumnName="IsExit" />
+          <ScalarProperty Name="IsEnter" ColumnName="IsEnter" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertLogs">
+      <EntityTypeMapping TypeName="GPSTrackerModel.AlertLog">
+        <MappingFragment StoreEntitySet="AlertLog">
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Success" ColumnName="Success" />
+          <ScalarProperty Name="FenceId" ColumnName="FenceId" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="MessageAlertId" ColumnName="MessageAlertId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_PersonalizationAllUsers">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_PersonalizationPerUser">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="GPSTrackerModel.aspnet_WebEvent_Events">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="SecondaryContact" ColumnName="SecondaryContact" />
+          <ScalarProperty Name="MainContact" ColumnName="MainContact" />
+          <ScalarProperty Name="DateRegistered" ColumnName="DateRegistered" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CompanyTrackerUsers">
+      <EntityTypeMapping TypeName="GPSTrackerModel.CompanyTrackerUser">
+        <MappingFragment StoreEntitySet="CompanyTrackerUser">
+          <ScalarProperty Name="TrackerUserId" ColumnName="TrackerUserId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exceptions">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Exception">
+        <MappingFragment StoreEntitySet="Exceptions">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ServerDateTime" ColumnName="ServerDateTime" />
+          <ScalarProperty Name="ExceptionText" ColumnName="ExceptionText" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoFences">
+      <EntityTypeMapping TypeName="GPSTrackerModel.GeoFence">
+        <MappingFragment StoreEntitySet="GeoFence">
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Zoom" ColumnName="Zoom" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="IsPublic" ColumnName="IsPublic" />
+          <ScalarProperty Name="FencesCoordinate" ColumnName="FencesCoordinate" />
+          <ScalarProperty Name="FencesName" ColumnName="FencesName" />
+          <ScalarProperty Name="FencesId" ColumnName="FencesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoFenceTypes">
+      <EntityTypeMapping TypeName="GPSTrackerModel.GeoFenceType">
+        <MappingFragment StoreEntitySet="GeoFenceType">
+          <ScalarProperty Name="FencesTypeName" ColumnName="FencesTypeName" />
+          <ScalarProperty Name="FencesTypeId" ColumnName="FencesTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Groups">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Group">
+        <MappingFragment StoreEntitySet="Group">
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupAlerts">
+      <EntityTypeMapping TypeName="GPSTrackerModel.GroupAlert">
+        <MappingFragment StoreEntitySet="GroupAlert">
+          <ScalarProperty Name="FencesId" ColumnName="FencesId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AlertId" ColumnName="AlertId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="GroupAlertId" ColumnName="GroupAlertId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationMessageAlerts">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LocationMessageAlert">
+        <MappingFragment StoreEntitySet="LocationMessageAlert">
+          <ScalarProperty Name="IsProcessed" ColumnName="IsProcessed" />
+          <ScalarProperty Name="Alt" ColumnName="Alt" />
+          <ScalarProperty Name="Lang" ColumnName="Lang" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="LocationMessageId" ColumnName="LocationMessageId" />
+          <ScalarProperty Name="MessageAlertId" ColumnName="MessageAlertId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationMessages2">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LocationMessages2">
+        <MappingFragment StoreEntitySet="LocationMessages2">
+          <ScalarProperty Name="DInput5" ColumnName="DInput5" />
+          <ScalarProperty Name="DInput4" ColumnName="DInput4" />
+          <ScalarProperty Name="DInput3" ColumnName="DInput3" />
+          <ScalarProperty Name="DInput2" ColumnName="DInput2" />
+          <ScalarProperty Name="DInput1" ColumnName="DInput1" />
+          <ScalarProperty Name="Input2" ColumnName="Input2" />
+          <ScalarProperty Name="Input1" ColumnName="Input1" />
+          <ScalarProperty Name="Extended_Functions" ColumnName="Extended Functions" />
+          <ScalarProperty Name="Altitude" ColumnName="Altitude" />
+          <ScalarProperty Name="VDOP" ColumnName="VDOP" />
+          <ScalarProperty Name="HDOP" ColumnName="HDOP" />
+          <ScalarProperty Name="MessageTime" ColumnName="MessageTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="IdleTime" ColumnName="IdleTime" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="LongitudeHeading" ColumnName="LongitudeHeading" />
+          <ScalarProperty Name="LatitudeHeading" ColumnName="LatitudeHeading" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="ServerTime" ColumnName="ServerTime" />
+          <ScalarProperty Name="LngSeconds" ColumnName="LngSeconds" />
+          <ScalarProperty Name="LngMinutes" ColumnName="LngMinutes" />
+          <ScalarProperty Name="LngDegrees" ColumnName="LngDegrees" />
+          <ScalarProperty Name="LatSeconds" ColumnName="LatSeconds" />
+          <ScalarProperty Name="LatMinutes" ColumnName="LatMinutes" />
+          <ScalarProperty Name="LatDegrees" ColumnName="LatDegrees" />
+          <ScalarProperty Name="RawTextData" ColumnName="RawTextData" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LR_LimerInfo">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LR_LimerInfo">
+        <MappingFragment StoreEntitySet="LR_LimerInfo">
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Vibe" ColumnName="Vibe" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LR_Passcode">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LR_Passcode">
+        <MappingFragment StoreEntitySet="LR_Passcode">
+          <ScalarProperty Name="Passcode" ColumnName="Passcode" />
+          <ScalarProperty Name="phonenumber" ColumnName="phonenumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LR_Status">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LR_Status">
+        <MappingFragment StoreEntitySet="LR_Status">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LR_Vibes">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LR_Vibes">
+        <MappingFragment StoreEntitySet="LR_Vibes">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutputStateTypes">
+      <EntityTypeMapping TypeName="GPSTrackerModel.OutputStateType">
+        <MappingFragment StoreEntitySet="OutputStateType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OutputTriggerTypes">
+      <EntityTypeMapping TypeName="GPSTrackerModel.OutputTriggerType">
+        <MappingFragment StoreEntitySet="OutputTriggerType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SimCards">
+      <EntityTypeMapping TypeName="GPSTrackerModel.SimCard">
+        <MappingFragment StoreEntitySet="SimCards">
+          <ScalarProperty Name="SimSerial" ColumnName="SimSerial" />
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerFenceMaps">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerFenceMap">
+        <MappingFragment StoreEntitySet="TrackerFenceMap">
+          <ScalarProperty Name="FencesId" ColumnName="FencesId" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerLinks">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerLink">
+        <MappingFragment StoreEntitySet="TrackerLink">
+          <ScalarProperty Name="LinkLevel" ColumnName="LinkLevel" />
+          <ScalarProperty Name="TrackerId2" ColumnName="TrackerId2" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerOutputs">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerOutput">
+        <MappingFragment StoreEntitySet="TrackerOutput">
+          <ScalarProperty Name="TriggerType" ColumnName="TriggerType" />
+          <ScalarProperty Name="LastVerifiedState" ColumnName="LastVerifiedState" />
+          <ScalarProperty Name="ProposedState" ColumnName="ProposedState" />
+          <ScalarProperty Name="OutputType" ColumnName="OutputType" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerOutputTypes">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerOutputType">
+        <MappingFragment StoreEntitySet="TrackerOutputType">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trackers">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Trackers">
+        <MappingFragment StoreEntitySet="Trackers">
+          <ScalarProperty Name="LastLocationId" ColumnName="LastLocationId" />
+          <ScalarProperty Name="LastLon" ColumnName="LastLon" />
+          <ScalarProperty Name="LastLat" ColumnName="LastLat" />
+          <ScalarProperty Name="HistoryRetension" ColumnName="HistoryRetension" />
+          <ScalarProperty Name="LastUpdate" ColumnName="LastUpdate" />
+          <ScalarProperty Name="AuthorizedNumbers" ColumnName="AuthorizedNumbers" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Serial" ColumnName="Serial" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerSims">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerSim">
+        <MappingFragment StoreEntitySet="TrackerSim">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DatePaired" ColumnName="DatePaired" />
+          <ScalarProperty Name="SimId" ColumnName="SimId" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerTypes">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerType">
+        <MappingFragment StoreEntitySet="TrackerType">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerUser">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerUser">
+        <MappingFragment StoreEntitySet="TrackerUser">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="DateBinded" ColumnName="DateBinded" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerVehicles">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerVehicle">
+        <MappingFragment StoreEntitySet="TrackerVehicle">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="DateInstalled" ColumnName="DateInstalled" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserFenceMaps">
+      <EntityTypeMapping TypeName="GPSTrackerModel.UserFenceMap">
+        <MappingFragment StoreEntitySet="UserFenceMap">
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="FencesId" ColumnName="FencesId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="GPSTrackerModel.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicle">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="ManufactureDate" ColumnName="ManufactureDate" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="RegistrationNumber" ColumnName="RegistrationNumber" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrackerLinkLevels">
+      <EntityTypeMapping TypeName="GPSTrackerModel.TrackerLinkLevel">
+        <MappingFragment StoreEntitySet="TrackerLinkLevels">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Me__Appli__5FB337D6" TypeName="GPSTrackerModel.FK__aspnet_Me__Appli__5FB337D6" StoreEntitySet="aspnet_Membership">
+      <EndProperty Name="aspnet_Membership">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pa__Appli__619B8048" TypeName="GPSTrackerModel.FK__aspnet_Pa__Appli__619B8048" StoreEntitySet="aspnet_Paths">
+      <EndProperty Name="aspnet_Paths">
+        <ScalarProperty Name="PathId" ColumnName="PathId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Ro__Appli__66603565" TypeName="GPSTrackerModel.FK__aspnet_Ro__Appli__66603565" StoreEntitySet="aspnet_Roles">
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Us__Appli__6754599E" TypeName="GPSTrackerModel.FK__aspnet_Us__Appli__6754599E" StoreEntitySet="aspnet_Users">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Applications">
+        <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pe__PathI__6383C8BA" TypeName="GPSTrackerModel.FK__aspnet_Pe__PathI__6383C8BA" StoreEntitySet="aspnet_PersonalizationPerUser">
+      <EndProperty Name="aspnet_PersonalizationPerUser">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Paths">
+        <ScalarProperty Name="PathId" ColumnName="PathId" />
+      </EndProperty>
+      <Condition ColumnName="PathId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK__aspnet_Pe__UserI__6477ECF3" TypeName="GPSTrackerModel.FK__aspnet_Pe__UserI__6477ECF3" StoreEntitySet="aspnet_PersonalizationPerUser">
+      <EndProperty Name="aspnet_PersonalizationPerUser">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <Condition ColumnName="UserId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_GeoFences_GeoFencesType" TypeName="GPSTrackerModel.FK_GeoFences_GeoFencesType" StoreEntitySet="GeoFence">
+      <EndProperty Name="GeoFence">
+        <ScalarProperty Name="FencesId" ColumnName="FencesId" />
+      </EndProperty>
+      <EndProperty Name="GeoFenceType">
+        <ScalarProperty Name="FencesTypeId" ColumnName="GeoFencesType_FencesTypeId" />
+      </EndProperty>
+      <Condition ColumnName="GeoFencesType_FencesTypeId" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="GPSTrackerModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="LocationMessages">
+      <EntityTypeMapping TypeName="GPSTrackerModel.LocationMessages">
+        <MappingFragment StoreEntitySet="LocationMessages">
+          <ScalarProperty Name="DigiInput5" ColumnName="DigiInput5" />
+          <ScalarProperty Name="DigiInput4" ColumnName="DigiInput4" />
+          <ScalarProperty Name="DigiInput3" ColumnName="DigiInput3" />
+          <ScalarProperty Name="DigiInput2" ColumnName="DigiInput2" />
+          <ScalarProperty Name="DigiInput1" ColumnName="DigiInput1" />
+          <ScalarProperty Name="DInput5" ColumnName="DInput5" />
+          <ScalarProperty Name="DInput4" ColumnName="DInput4" />
+          <ScalarProperty Name="DInput3" ColumnName="DInput3" />
+          <ScalarProperty Name="DInput2" ColumnName="DInput2" />
+          <ScalarProperty Name="DInput1" ColumnName="DInput1" />
+          <ScalarProperty Name="Input2" ColumnName="Input2" />
+          <ScalarProperty Name="Input1" ColumnName="Input1" />
+          <ScalarProperty Name="Extended_Functions" ColumnName="Extended Functions" />
+          <ScalarProperty Name="Altitude" ColumnName="Altitude" />
+          <ScalarProperty Name="VDOP" ColumnName="VDOP" />
+          <ScalarProperty Name="HDOP" ColumnName="HDOP" />
+          <ScalarProperty Name="MessageTime" ColumnName="MessageTime" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Direction" ColumnName="Direction" />
+          <ScalarProperty Name="IdleTime" ColumnName="IdleTime" />
+          <ScalarProperty Name="Speed" ColumnName="Speed" />
+          <ScalarProperty Name="LongitudeHeading" ColumnName="LongitudeHeading" />
+          <ScalarProperty Name="LatitudeHeading" ColumnName="LatitudeHeading" />
+          <ScalarProperty Name="TrackerId" ColumnName="TrackerId" />
+          <ScalarProperty Name="ServerTime" ColumnName="ServerTime" />
+          <ScalarProperty Name="LngSeconds" ColumnName="LngSeconds" />
+          <ScalarProperty Name="LngMinutes" ColumnName="LngMinutes" />
+          <ScalarProperty Name="LngDegrees" ColumnName="LngDegrees" />
+          <ScalarProperty Name="LatSeconds" ColumnName="LatSeconds" />
+          <ScalarProperty Name="LatMinutes" ColumnName="LatMinutes" />
+          <ScalarProperty Name="LatDegrees" ColumnName="LatDegrees" />
+          <ScalarProperty Name="RawTextData" ColumnName="RawTextData" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

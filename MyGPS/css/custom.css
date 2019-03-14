@@ -1,0 +1,148 @@
+﻿.form-control.input-sm
+{
+    color:white;
+}
+.form-control.input-sm-bk
+{
+    color:white;
+}
+.larger
+{
+    height:30px;
+}
+
+.modal-dialog .mapViewDialog{
+    width:1000px;
+}
+
+.panel-heading{font-weight:bold;}
+
+
+.myGPSLoginLogo{
+    height: 100px;
+}
+
+input#MainContent_txtdate.form-control.input-sm {
+    color: black;
+}
+
+.labels {
+   color: #0026FF;
+   background-color: white;
+   font-family:"Trebuchet MS", Arial, Helvetica, Sans-Serif;
+   font-size: 11px;
+   font-weight: bold;
+   text-align: center;
+   
+   border: 0px solid black;
+   border-radius: 5px !important;
+   white-space: nowrap;
+   margin-left:5px;
+   padding:5px;
+}
+
+
+
+.gmap3 {
+    margin: 20px auto;
+    margin-top: 2px !important;
+    border: 1px dashed #C0C0C0;
+    width: 100%;
+    color: Black;
+    position:relative;
+}
+
+@media screen and (min-width: 768px) {
+    .gmap3 {
+        height:676px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .gmap3 {
+    height: 400px;
+  }
+}
+
+.list-item-nl{
+    display:block;
+}
+
+.textLeft{
+    text-align:left;
+}
+
+.onoffswitch {
+    position: relative; width: 90px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #2FCCFF; color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    border: 2px solid #999999; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 56px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.tracker-select-box {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    background: #fff;
+    padding: 5px;
+    height: 200px!important;
+    font-size: 12px;
+}
+
+.tracker-select-box-nav {
+    margin-top: 50%;
+}
+
+.default_mytrack_control {
+    position:absolute;
+    margin:120px !important;
+}

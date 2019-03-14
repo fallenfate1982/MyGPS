@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GPSTrackerModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="GPSTrackerEntities1">
+    <EntitySet Name="AdministrativeUsers" EntityType="GPSTrackerModel.AdministrativeUser" />
+    <EntitySet Name="Alerts" EntityType="GPSTrackerModel.Alert" />
+    <EntitySet Name="AlertFireds" EntityType="GPSTrackerModel.AlertFired" />
+    <EntitySet Name="AlertLogs" EntityType="GPSTrackerModel.AlertLog" />
+    <EntitySet Name="aspnet_Applications" EntityType="GPSTrackerModel.aspnet_Applications" />
+    <EntitySet Name="aspnet_Membership" EntityType="GPSTrackerModel.aspnet_Membership" />
+    <EntitySet Name="aspnet_Paths" EntityType="GPSTrackerModel.aspnet_Paths" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="GPSTrackerModel.aspnet_PersonalizationAllUsers" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="GPSTrackerModel.aspnet_PersonalizationPerUser" />
+    <EntitySet Name="aspnet_Profile" EntityType="GPSTrackerModel.aspnet_Profile" />
+    <EntitySet Name="aspnet_Roles" EntityType="GPSTrackerModel.aspnet_Roles" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="GPSTrackerModel.aspnet_SchemaVersions" />
+    <EntitySet Name="aspnet_Users" EntityType="GPSTrackerModel.aspnet_Users" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="GPSTrackerModel.aspnet_WebEvent_Events" />
+    <EntitySet Name="Companies" EntityType="GPSTrackerModel.Company" />
+    <EntitySet Name="CompanyTrackerUsers" EntityType="GPSTrackerModel.CompanyTrackerUser" />
+    <EntitySet Name="Exceptions" EntityType="GPSTrackerModel.Exception" />
+    <EntitySet Name="GeoFences" EntityType="GPSTrackerModel.GeoFence" />
+    <EntitySet Name="GeoFenceTypes" EntityType="GPSTrackerModel.GeoFenceType" />
+    <EntitySet Name="Groups" EntityType="GPSTrackerModel.Group" />
+    <EntitySet Name="GroupAlerts" EntityType="GPSTrackerModel.GroupAlert" />
+    <EntitySet Name="LocationMessageAlerts" EntityType="GPSTrackerModel.LocationMessageAlert" />
+    <EntitySet Name="LocationMessages2" EntityType="GPSTrackerModel.LocationMessages2" />
+    <EntitySet Name="LR_LimerInfo" EntityType="GPSTrackerModel.LR_LimerInfo" />
+    <EntitySet Name="LR_Passcode" EntityType="GPSTrackerModel.LR_Passcode" />
+    <EntitySet Name="LR_Status" EntityType="GPSTrackerModel.LR_Status" />
+    <EntitySet Name="LR_Vibes" EntityType="GPSTrackerModel.LR_Vibes" />
+    <EntitySet Name="OutputStateTypes" EntityType="GPSTrackerModel.OutputStateType" />
+    <EntitySet Name="OutputTriggerTypes" EntityType="GPSTrackerModel.OutputTriggerType" />
+    <EntitySet Name="SimCards" EntityType="GPSTrackerModel.SimCard" />
+    <EntitySet Name="Status" EntityType="GPSTrackerModel.Status" />
+    <EntitySet Name="TrackerFenceMaps" EntityType="GPSTrackerModel.TrackerFenceMap" />
+    <EntitySet Name="TrackerLinks" EntityType="GPSTrackerModel.TrackerLink" />
+    <EntitySet Name="TrackerOutputs" EntityType="GPSTrackerModel.TrackerOutput" />
+    <EntitySet Name="TrackerOutputTypes" EntityType="GPSTrackerModel.TrackerOutputType" />
+    <EntitySet Name="Trackers" EntityType="GPSTrackerModel.Trackers" />
+    <EntitySet Name="TrackerSims" EntityType="GPSTrackerModel.TrackerSim" />
+    <EntitySet Name="TrackerTypes" EntityType="GPSTrackerModel.TrackerType" />
+    <EntitySet Name="TrackerUser" EntityType="GPSTrackerModel.TrackerUser" />
+    <EntitySet Name="TrackerVehicles" EntityType="GPSTrackerModel.TrackerVehicle" />
+    <EntitySet Name="UserFenceMaps" EntityType="GPSTrackerModel.UserFenceMap" />
+    <EntitySet Name="Vehicles" EntityType="GPSTrackerModel.Vehicle" />
+    <EntitySet Name="TrackerLinkLevels" EntityType="GPSTrackerModel.TrackerLinkLevel" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__5FB337D6" Association="GPSTrackerModel.FK__aspnet_Me__Appli__5FB337D6">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__619B8048" Association="GPSTrackerModel.FK__aspnet_Pa__Appli__619B8048">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__66603565" Association="GPSTrackerModel.FK__aspnet_Ro__Appli__66603565">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__6754599E" Association="GPSTrackerModel.FK__aspnet_Us__Appli__6754599E">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__60A75C0F" Association="GPSTrackerModel.FK__aspnet_Me__UserI__60A75C0F">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__628FA481" Association="GPSTrackerModel.FK__aspnet_Pe__PathI__628FA481">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__6383C8BA" Association="GPSTrackerModel.FK__aspnet_Pe__PathI__6383C8BA">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__6477ECF3" Association="GPSTrackerModel.FK__aspnet_Pe__UserI__6477ECF3">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__656C112C" Association="GPSTrackerModel.FK__aspnet_Pr__UserI__656C112C">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GeoFences_GeoFencesType" Association="GPSTrackerModel.FK_GeoFences_GeoFencesType">
+      <End Role="GeoFenceType" EntitySet="GeoFenceTypes" />
+      <End Role="GeoFence" EntitySet="GeoFences" />
+    </AssociationSet>
+    <AssociationSet Name="aspnet_UsersInRoles" Association="GPSTrackerModel.aspnet_UsersInRoles">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <EntitySet Name="LocationMessages" EntityType="GPSTrackerModel.LocationMessages" />
+  </EntityContainer>
+  <EntityType Name="AdministrativeUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ClearanceLevel" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Alert">
+    <Key>
+      <PropertyRef Name="AlertId" />
+    </Key>
+    <Property Name="AlertId" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="AlertName" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AlertOnGeofenceEnter" Type="Boolean" />
+    <Property Name="AlertOnGeofenceLeave" Type="Boolean" />
+    <Property Name="AlertOnLowBattery" Type="Boolean" />
+    <Property Name="AlertOnAlarm" Type="Boolean" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="SmsAlert" Type="Boolean" />
+    <Property Name="EmailAlert" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="AlertFired">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TrackerId" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsEnter" Type="Boolean" />
+    <Property Name="IsExit" Type="Boolean" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="AlertId" Type="Int32" />
+    <Property Name="FenceId" Type="Int32" />
+    <Property Name="MessageAlertId" Type="Int64" Nullable="false" />
+    <Property Name="LocationMessageId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="AlertLog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="MessageAlertId" Type="Int64" />
+    <Property Name="UserId" Type="Guid" />
+    <Property Name="AlertId" Type="Int32" />
+    <Property Name="FenceId" Type="Int32" />
+    <Property Name="Success" Type="Boolean" />
+    <Property Name="Action" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LoweredApplicationName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationId" Type="Guid" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="GPSTrackerModel.FK__aspnet_Me__Appli__5FB337D6" FromRole="aspnet_Applications" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="GPSTrackerModel.FK__aspnet_Pa__Appli__619B8048" FromRole="aspnet_Applications" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="GPSTrackerModel.FK__aspnet_Ro__Appli__66603565" FromRole="aspnet_Applications" ToRole="aspnet_Roles" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GPSTrackerModel.FK__aspnet_Us__Appli__6754599E" FromRole="aspnet_Applications" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordFormat" Type="Int32" Nullable="false" />
+    <Property Name="PasswordSalt" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="MobilePIN" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LoweredEmail" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordQuestion" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordAnswer" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsApproved" Type="Boolean" Nullable="false" />
+    <Property Name="IsLockedOut" Type="Boolean" Nullable="false" />
+    <Property Name="CreateDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLoginDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LastLockoutDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="Int32" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GPSTrackerModel.FK__aspnet_Me__Appli__5FB337D6" FromRole="aspnet_Membership" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GPSTrackerModel.FK__aspnet_Me__UserI__60A75C0F" FromRole="aspnet_Membership" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LoweredPath" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GPSTrackerModel.FK__aspnet_Pa__Appli__619B8048" FromRole="aspnet_Paths" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_PersonalizationAllUsers" Relationship="GPSTrackerModel.FK__aspnet_Pe__PathI__628FA481" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationAllUsers" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="GPSTrackerModel.FK__aspnet_Pe__PathI__6383C8BA" FromRole="aspnet_Paths" ToRole="aspnet_PersonalizationPerUser" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="Guid" Nullable="false" />
+    <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="GPSTrackerModel.FK__aspnet_Pe__PathI__628FA481" FromRole="aspnet_PersonalizationAllUsers" ToRole="aspnet_Paths" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" />
+    <Property Name="PageSettings" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Paths" Relationship="GPSTrackerModel.FK__aspnet_Pe__PathI__6383C8BA" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Paths" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GPSTrackerModel.FK__aspnet_Pe__UserI__6477ECF3" FromRole="aspnet_PersonalizationPerUser" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="PropertyNames" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PropertyValuesString" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PropertyValuesBinary" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="LastUpdatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GPSTrackerModel.FK__aspnet_Pr__UserI__656C112C" FromRole="aspnet_Profile" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="Guid" Nullable="false" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LoweredRoleName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GPSTrackerModel.FK__aspnet_Ro__Appli__66603565" FromRole="aspnet_Roles" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Users" Relationship="GPSTrackerModel.aspnet_UsersInRoles" FromRole="aspnet_Roles" ToRole="aspnet_Users" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="CompatibleSchemaVersion" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="IsCurrentVersion" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="LoweredUserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="MobileAlias" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="IsAnonymous" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="aspnet_Applications" Relationship="GPSTrackerModel.FK__aspnet_Us__Appli__6754599E" FromRole="aspnet_Users" ToRole="aspnet_Applications" />
+    <NavigationProperty Name="aspnet_Membership" Relationship="GPSTrackerModel.FK__aspnet_Me__UserI__60A75C0F" FromRole="aspnet_Users" ToRole="aspnet_Membership" />
+    <NavigationProperty Name="aspnet_PersonalizationPerUser" Relationship="GPSTrackerModel.FK__aspnet_Pe__UserI__6477ECF3" FromRole="aspnet_Users" ToRole="aspnet_PersonalizationPerUser" />
+    <NavigationProperty Name="aspnet_Profile" Relationship="GPSTrackerModel.FK__aspnet_Pr__UserI__656C112C" FromRole="aspnet_Users" ToRole="aspnet_Profile" />
+    <NavigationProperty Name="aspnet_Roles" Relationship="GPSTrackerModel.aspnet_UsersInRoles" FromRole="aspnet_Users" ToRole="aspnet_Roles" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="String" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+    <Property Name="EventTimeUtc" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EventTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EventType" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="EventSequence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+    <Property Name="EventOccurrence" Type="Decimal" Nullable="false" Precision="19" Scale="0" />
+    <Property Name="EventCode" Type="Int32" Nullable="false" />
+    <Property Name="EventDetailCode" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationPath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationVirtualPath" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="MachineName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="RequestUrl" Type="String" MaxLength="1024" FixedLength="false" Unicode="true" />
+    <Property Name="ExceptionType" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DateRegistered" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="MainContact" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SecondaryContact" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="CompanyTrackerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="TrackerUserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Exception">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="ExceptionText" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ServerDateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="GeoFence">
+    <Key>
+      <PropertyRef Name="FencesId" />
+    </Key>
+    <Property Name="FencesId" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="FencesName" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="FencesCoordinate" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsPublic" Type="Boolean" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="Zoom" Type="Int32" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="GeoFenceType" Relationship="GPSTrackerModel.FK_GeoFences_GeoFencesType" FromRole="GeoFence" ToRole="GeoFenceType" />
+  </EntityType>
+  <EntityType Name="GeoFenceType">
+    <Key>
+      <PropertyRef Name="FencesTypeId" />
+    </Key>
+    <Property Name="FencesTypeId" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="FencesTypeName" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="GeoFences" Relationship="GPSTrackerModel.FK_GeoFences_GeoFencesType" FromRole="GeoFenceType" ToRole="GeoFence" />
+  </EntityType>
+  <EntityType Name="Group">
+    <Key>
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="GroupId" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="3" />
+    <Property Name="UpdatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GroupAlert">
+    <Key>
+      <PropertyRef Name="GroupAlertId" />
+    </Key>
+    <Property Name="GroupAlertId" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="AlertId" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Boolean" />
+    <Property Name="FencesId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="LocationMessageAlert">
+    <Key>
+      <PropertyRef Name="MessageAlertId" />
+    </Key>
+    <Property Name="MessageAlertId" Type="Int64" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="LocationMessageId" Type="Int32" />
+    <Property Name="TrackerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Lat" Type="Double" />
+    <Property Name="Lang" Type="Double" />
+    <Property Name="Alt" Type="Int32" />
+    <Property Name="IsProcessed" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="LocationMessages2">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="RawTextData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LatDegrees" Type="Int32" Nullable="false" />
+    <Property Name="LatMinutes" Type="Int32" Nullable="false" />
+    <Property Name="LatSeconds" Type="Double" Nullable="false" />
+    <Property Name="LngDegrees" Type="Int32" Nullable="false" />
+    <Property Name="LngMinutes" Type="Int32" Nullable="false" />
+    <Property Name="LngSeconds" Type="Double" Nullable="false" />
+    <Property Name="ServerTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LatitudeHeading" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="LongitudeHeading" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Speed" Type="Double" Nullable="false" />
+    <Property Name="IdleTime" Type="Int64" Nullable="false" />
+    <Property Name="Direction" Type="Double" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MessageTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HDOP" Type="Double" Nullable="false" />
+    <Property Name="VDOP" Type="Double" Nullable="false" />
+    <Property Name="Altitude" Type="Int32" Nullable="false" />
+    <Property Name="Extended_Functions" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Input1" Type="Double" />
+    <Property Name="Input2" Type="Double" />
+    <Property Name="DInput1" Type="Double" />
+    <Property Name="DInput2" Type="Double" />
+    <Property Name="DInput3" Type="Double" />
+    <Property Name="DInput4" Type="Double" />
+    <Property Name="DInput5" Type="Double" />
+  </EntityType>
+  <EntityType Name="LR_LimerInfo">
+    <Key>
+      <PropertyRef Name="TrackerId" />
+    </Key>
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Vibe" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="LR_Passcode">
+    <Key>
+      <PropertyRef Name="phonenumber" />
+    </Key>
+    <Property Name="phonenumber" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Passcode" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="LR_Status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="LR_Vibes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OutputStateType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="OutputTriggerType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="SimCard">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="PhoneNumber" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="SimSerial" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="StatusId" />
+    </Key>
+    <Property Name="StatusId" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TrackerFenceMap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TrackerId" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="FencesId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TrackerLink">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TrackerId2" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LinkLevel" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrackerOutput">
+    <Key>
+      <PropertyRef Name="TrackerId" />
+      <PropertyRef Name="Number" />
+    </Key>
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Number" Type="Int32" Nullable="false" />
+    <Property Name="OutputType" Type="Int32" Nullable="false" />
+    <Property Name="ProposedState" Type="Int32" Nullable="false" />
+    <Property Name="LastVerifiedState" Type="Int32" Nullable="false" />
+    <Property Name="TriggerType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrackerOutputType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Trackers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Serial" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="AuthorizedNumbers" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastUpdate" Type="DateTime" Precision="3" />
+    <Property Name="HistoryRetension" Type="Int32" />
+    <Property Name="LastLat" Type="Double" />
+    <Property Name="LastLon" Type="Double" />
+    <Property Name="LastLocationId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="TrackerSim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="SimId" Type="Int32" Nullable="false" />
+    <Property Name="DatePaired" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrackerType">
+    <Key>
+      <PropertyRef Name="TypeId" />
+    </Key>
+    <Property Name="TypeId" Type="String" Nullable="false" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TrackerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="UserId" Type="Guid" Nullable="false" />
+    <Property Name="DateBinded" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="Details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TrackerVehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="DateInstalled" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Details" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="UserFenceMap">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="FencesId" Type="Int32" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="UserName" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="RegistrationNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Color" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Make" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Model" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ManufactureDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="SerialNumber" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Details" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="TrackerLinkLevel">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Description" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__5FB337D6">
+    <End Type="GPSTrackerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_Membership" Role="aspnet_Membership" Multiplicity="*" />
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__619B8048">
+    <End Type="GPSTrackerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="*" />
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__66603565">
+    <End Type="GPSTrackerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="*" />
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__6754599E">
+    <End Type="GPSTrackerModel.aspnet_Applications" Role="aspnet_Applications" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="*" />
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__60A75C0F">
+    <End Type="GPSTrackerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_Membership" Role="aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__628FA481">
+    <End Type="GPSTrackerModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_PersonalizationAllUsers" Role="aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__6383C8BA">
+    <End Type="GPSTrackerModel.aspnet_Paths" Role="aspnet_Paths" Multiplicity="0..1" />
+    <End Type="GPSTrackerModel.aspnet_PersonalizationPerUser" Role="aspnet_PersonalizationPerUser" Multiplicity="*" />
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__6477ECF3">
+    <End Type="GPSTrackerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="0..1" />
+    <End Type="GPSTrackerModel.aspnet_PersonalizationPerUser" Role="aspnet_PersonalizationPerUser" Multiplicity="*" />
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__656C112C">
+    <End Type="GPSTrackerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="1" />
+    <End Type="GPSTrackerModel.aspnet_Profile" Role="aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GeoFences_GeoFencesType">
+    <End Type="GPSTrackerModel.GeoFenceType" Role="GeoFenceType" Multiplicity="0..1" />
+    <End Type="GPSTrackerModel.GeoFence" Role="GeoFence" Multiplicity="*" />
+  </Association>
+  <Association Name="aspnet_UsersInRoles">
+    <End Type="GPSTrackerModel.aspnet_Roles" Role="aspnet_Roles" Multiplicity="*" />
+    <End Type="GPSTrackerModel.aspnet_Users" Role="aspnet_Users" Multiplicity="*" />
+  </Association>
+  <EntityType Name="LocationMessages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="RawTextData" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LatDegrees" Type="Int32" Nullable="false" />
+    <Property Name="LatMinutes" Type="Int32" Nullable="false" />
+    <Property Name="LatSeconds" Type="Double" Nullable="false" />
+    <Property Name="LngDegrees" Type="Int32" Nullable="false" />
+    <Property Name="LngMinutes" Type="Int32" Nullable="false" />
+    <Property Name="LngSeconds" Type="Double" Nullable="false" />
+    <Property Name="ServerTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TrackerId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LatitudeHeading" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="LongitudeHeading" Type="String" Nullable="false" MaxLength="1" FixedLength="true" Unicode="false" />
+    <Property Name="Speed" Type="Double" Nullable="false" />
+    <Property Name="IdleTime" Type="Int64" Nullable="false" />
+    <Property Name="Direction" Type="Double" Nullable="false" />
+    <Property Name="Status" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MessageTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="HDOP" Type="Double" Nullable="false" />
+    <Property Name="VDOP" Type="Double" Nullable="false" />
+    <Property Name="Altitude" Type="Int32" Nullable="false" />
+    <Property Name="Extended_Functions" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Input1" Type="Double" />
+    <Property Name="Input2" Type="Double" />
+    <Property Name="DInput1" Type="Double" />
+    <Property Name="DInput2" Type="Double" />
+    <Property Name="DInput3" Type="Double" />
+    <Property Name="DInput4" Type="Double" />
+    <Property Name="DInput5" Type="Double" />
+    <Property Name="DigiInput1" Type="Boolean" />
+    <Property Name="DigiInput2" Type="Boolean" />
+    <Property Name="DigiInput3" Type="Boolean" />
+    <Property Name="DigiInput4" Type="Boolean" />
+    <Property Name="DigiInput5" Type="Boolean" />
+  </EntityType>
+</Schema>

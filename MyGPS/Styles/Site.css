@@ -1,0 +1,326 @@
+﻿
+* { margin: 0; padding: 0; outline:0; }
+
+body {
+    font-size: 12px;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, Sans-Serif;
+    color: #fff;
+    background: url('../images/body-bg.png');
+}
+
+
+a { color: #ffd927; text-decoration: none; cursor:pointer; }
+a:hover { text-decoration: underline; }
+a img { border: 0; }
+
+input, textarea, select { font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+textarea { overflow: auto; }
+.hidden { display:none; }
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.notext { font-size: 0; line-height: 0; text-indent: -4000px; }
+
+.left, .alignleft { float: left; display: inline; }
+.right, .alignright { float: right; display: inline; }
+
+h2 { font-family:"Trebuchet MS", Arial, Helvetica, Sans-Serif; font-size:19px; color:#ffd900; font-weight:bold; }
+h3 { font-family:"Trebuchet MS", Arial, Helvetica, Sans-Serif; font-size:18px; color:#ffd927; font-weight:bold; text-shadow:1px 1px 0 #000; }
+h4 { font-family:"Trebuchet MS", Arial, Helvetica, Sans-Serif; font-size:19px; color:#8f8f8f; font-weight:bold; }
+.shell { margin:0 auto; margin-left:10px;}
+
+table {border-collapse: separate; border-spacing: 2px;}
+
+#header { background:url('../images/header-bg.png') repeat-x; height:90px;min-width: 1218px; }
+#header .shell { padding-bottom:20px; position:relative; margin-left:10px;}
+
+h1#logo { float:left; padding:15px 0 0 0; margin-left:-3px; }
+h1#logo a { float:left; width:241px; height:75px; background:url('../images/logo.png') no-repeat 0 0; font-size: 0; line-height: 0; text-indent: -4000px; }
+
+#navigation { position:absolute; top:31px; float: left; margin-left: 300px; }
+#navigation ul { list-style:none; }
+#navigation ul li { float:left; display:inline; padding-left:1px; }
+#navigation ul li a { font-family:"Trebuchet MS", Arial, Helvetica, Sans-Serif; font-size:13px; color:#a6dd1f; text-shadow:0px 2px 1px #000; }
+#navigation ul li a { float:left; display:inline; width:97px; line-height:27px; height:30px; text-align:center; }
+#navigation ul li a.active,
+#navigation ul li a:hover { float:left; background:url('../images/nav-active.png') no-repeat center 0;  color:#fff; text-decoration:none; padding-bottom:3px; }
+
+#main { padding-top:11px; padding-bottom:31px; }
+
+.main-boxes { min-height: 200px;min-width: 1218px; }
+.box { width:244px; float:left; padding-right:16px; background:url('../images/box-bg.png') repeat-y 0 0; position:relative;  }
+.box2 { width:1224px; float:left; padding-right:16px; background:url('../images/box-bg2.png') repeat-y 0 0; position:relative;  }
+.last { padding:0;  }
+.box-t { background:url('../images/box-t.png') no-repeat 0 top;  }
+.box-b { background:url('../images/box-b.png') no-repeat 0 bottom ; padding-bottom:8px; }
+
+.box h3 {padding: 11px 0 8px 15px;}
+.box ul { list-style:none; min-height:20px; height: auto !important; height:150px; background:url('../images/box-separator.png') repeat-x center top; padding-top:9px; }
+.box ul li {display:block; padding:6px 15px; font-size:13px; color:#fff; background:url('../images/box-separator.png') no-repeat center bottom;  }
+.box ul li.last-item { background:url('../images/box-separator.png') repeat-x center bottom; margin: 0 2px; padding-bottom:16px; }
+
+#loginPanel {
+    width: 300px;
+    padding: 5px;
+    font-size: 8pt;
+    color: #D9D9D9;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+
+.box .vehicleselect {cursor:pointer; }
+.box .vehicleselect span { font-size:27px; font-weight:bold; color:#adff00; }
+.box .vehicleselect li a {margin-left:10px;;font-size: 14px;}
+
+.gmap3 {
+    margin: 20px auto;
+    margin-top: 2px !important;
+    border: 1px dashed #C0C0C0;
+    width: 100%;
+    height: 525px;
+    color: Black;
+    position:relative;
+}
+
+.labels {
+    color: #0026FF;
+    background-color: white;
+    font-family:"Trebuchet MS", Arial, Helvetica, Sans-Serif;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    width: 60px;     
+    border: 2px solid black;
+    white-space: nowrap;
+}
+#footer
+{
+    padding: 24px 0;
+    background: url('../images/footer-bg.png') repeat-x 0 top;
+    text-align:center;
+}
+#footer .shell {  }
+#footer p, 
+#footer a { color:#a2a1a1; }
+#footer a:hover { color:#ddd; text-decoration: none; }
+#footer p.text-right { text-align:right; }
+#footer span { padding:0 1px; }
+
+.button 
+{
+    background: url(../images/button_background.png) 0 0 repeat-x #FABB0C;
+}
+
+/*
+	glDatePicker default style
+
+	http://code.gautamlad.com/glDatePicker/
+	https://github.com/glad/glDatePicker/
+*/
+
+/* Calendar container div */
+.gldp-default
+{
+	float:left;
+	font-family:"trebuchet ms" !important;
+	background-color:#ccc !important;
+	font-size:0.8em !important;
+	border:solid 1px #888;
+}
+
+/* Table style */
+.gldp-default table
+{
+	border-spacing:1px;
+	border-collapse:inherit;
+}
+
+/* Default row height */
+.gldp-default tr
+{
+	line-height:28px;
+}
+
+/* Default style of cell */
+.gldp-default td
+{
+	margin:0;
+	padding:0;
+	width:33px;
+	text-align:center;
+}
+
+/* Previous and Next arrows */
+.gldp-default-prevnext
+{
+	font-family:"times new roman";
+	color:#222;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Month Year title */
+.gldp-default-monyear
+{
+	color:#222;
+	font-size:0.9em !important;
+	font-weight:bold;
+}
+
+/* Days of the week (Sun, Mon, ...) */
+.gldp-default-dow
+{
+	background-color:#f82200;
+	color:#eee;
+	font-size:0.8em !important;
+	font-weight:bold;
+}
+
+/* Selectable days */
+.gldp-default-day
+{
+	background-color:#fff;
+	color:#222;
+	border:solid 1px #fff;
+	font-weight:bold;
+}
+.gldp-default-day-hover
+{
+	background-color:#fff;
+	color:#f82200;
+	border:solid 1px #f82200;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Selected days */
+.gldp-default-selected
+{
+	background-color:#fee;
+	color:#222;
+	border:solid 1px #f82200;
+}
+
+/* Today */
+.gldp-default-today
+{
+	background-color:#f82200;
+	color:#fff;
+	border:solid 1px #f82200;
+	font-weight:bold;
+}
+.gldp-default-today-hover
+{
+	background-color:#fff;
+	color:#f82200;
+	border:solid 1px #f82200;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Weekends */
+.gldp-default-sat, .gldp-default-sun
+{
+	background-color:#fff;
+	color:#004f8f;
+	border:solid 1px #fff;
+	font-weight:bold;
+}
+.gldp-default-sat-hover, .gldp-default-sun-hover
+{
+	background-color:#fff;
+	color:#004f8f;
+	border:solid 1px #f82200;
+	cursor:pointer;
+	font-weight:bold;
+}
+
+/* Non-selectable day.  Includes:previous/next month days and days that fall in the allowOld and endDate conditions */
+.gldp-default-noday
+{
+	background-color:#fff;
+	border:solid 1px #fff;
+	color:#666;
+	cursor:wait;
+}
+
+
+.inner {
+    margin: 0 auto;
+}
+#selTime {
+    width: 400px;
+
+margin: 0 auto;
+margin-bottom: 90px;
+}
+
+#selDay {
+    height: 310px;
+   width: 400px;
+    margin: 0 auto;
+}
+
+#selDateTime {
+   width: 100%;
+height: 800px;
+background-color: rgba(0,0,0,0.8);
+position: relative;
+top: -555px;
+z-index: 1;
+left: -9px;
+display:none;
+}
+
+.linkButton {
+    width:25px;
+    border:solid 1px white;
+    padding:5px;
+    margin: 0 auto;
+    cursor:pointer;
+}
+
+.histRow {
+    height:30px;
+}
+
+.histButton{
+    width: 100px; margin: 0px; float: right;text-align:center;
+}
+
+.fullScreen {
+     cursor: pointer;z-index: 101;width:120px;direction: ltr; overflow: hidden; text-align: center; position:relative; 
+     font-family: Arial, sans-serif; -webkit-user-select: none; font-size: 13px; padding: 1px 6px; border: 1px solid rgb(113, 123, 135); 
+     -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; box-shadow: rgba(0, 0, 0, 0.398438) 0px 2px 4px; min-width: 28px; color: rgb(0, 0, 0);
+      font-weight: bold; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;
+      z-index:0;
+}
+
+/* Forms */
+.form1 {background: #515151;margin: 3px;padding: 20px;position: relative;min-height:300px}
+.form1 legend {
+    position: absolute;
+    top: -2px;
+    padding: 10px 20px;
+    border-top: none;
+    font-weight: bold;
+}
+.form1 legend span {display: block;margin: -20px;background: #fff;padding: 0px 20px;}
+.form1 label {display: block;margin-right: 3px;padding-top: 2px;float: left;width: 130px;text-align:right}
+.form1 input[type=text], textarea, select { float: right;width: 400px;margin-left: 5px;margin-bottom:3px}
+.form1 input[type=submit]  { width: 80px !important;float: right;margin-left: 5px}
+
+.gridview{width: 100%;background-color: #fff;margin: 5px 0 10px 0;border: solid 1px #525252;border-collapse:collapse;}
+.gridview td{padding: 2px;border: solid 1px #c1c1c1;color: #717171;height: 32px;}
+.gridview th{height: 35px; padding: 4px 4px 4px 4px;color: #fff;background: #424242;border-left: solid 1px #525252;font-size: 0.9em;}
+.gridview .gridview_alter {background: #E7E7E7;}
+.gridview .gridview_pager {background: #424242;}
+.gridview .gridview_pager table {margin: 5px 0;}
+.gridview .gridview_pager td{border-width: 0;padding: 0 6px;border-left: solid 1px #666;font-weight: bold;color: #fff;line-height: 12px;}  
+.gridview .gridview_pager a {color: #666;text-decoration: none;}
+.gridview .gridview_pager a:hover {color: #000;text-decoration: none;}
+
+.input1 { width: 250px;}
+
+/* fances */
+.fancesArea input[type='text']{ width: 400px;color:#000000}

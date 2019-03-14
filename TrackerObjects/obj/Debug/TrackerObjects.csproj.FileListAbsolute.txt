@@ -1,0 +1,8 @@
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\TrackerObjects\obj\Debug\TrackerObjects.csprojResolveAssemblyReference.cache
+C:\Temp\MyGps2\TrackerObjects\bin\Debug\GTSBizObjects.dll
+C:\Temp\MyGps2\TrackerObjects\bin\Debug\GTSBizObjects.pdb
+C:\Temp\MyGps2\TrackerObjects\bin\Debug\TrackerDataStorage.dll
+C:\Temp\MyGps2\TrackerObjects\bin\Debug\TrackerDataStorage.pdb
+C:\Temp\MyGps2\TrackerObjects\obj\Debug\TrackerObjects.csprojResolveAssemblyReference.cache
+C:\Temp\MyGps2\TrackerObjects\obj\Debug\GTSBizObjects.dll
+C:\Temp\MyGps2\TrackerObjects\obj\Debug\GTSBizObjects.pdb

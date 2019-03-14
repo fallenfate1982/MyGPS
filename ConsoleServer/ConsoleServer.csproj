@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4AA94C1A-CCC1-4266-8A5B-55858FFC9540}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleServer</RootNamespace>
+    <AssemblyName>ConsoleServer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\MyGPS\ConsoleServer\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>116B5A79FF670E1CDBE3A32AF098886B1B0BD1CF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ConsoleServer_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TCPServer.cs" />
+    <Compile Include="UDPServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrackerDataStorage\TrackerDataStorage.csproj">
+      <Project>{DFD330C8-AEAF-48E3-A980-1A6F00322CA6}</Project>
+      <Name>TrackerDataStorage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TrackerObjects\TrackerObjects.csproj">
+      <Project>{6369B141-C22B-4059-BF88-D30D5BD46BA9}</Project>
+      <Name>TrackerObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="ConsoleServer_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

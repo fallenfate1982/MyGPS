@@ -1,0 +1,14 @@
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\bin\Debug\GPSClientDataTest.exe
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\bin\Debug\GPSClientDataTest.pdb
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\obj\Debug\GPSClientDataTest.Properties.Resources.resources
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\obj\Debug\GPSClientDataTest.csproj.GenerateResource.Cache
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\obj\Debug\GPSClientDataTest.exe
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\obj\Debug\GPSClientDataTest.pdb
+D:\E\Projects\Dev\MishaInfotech\MyGpsV2\GPSClientDataTest\obj\Debug\GPSClientDataTest.csprojResolveAssemblyReference.cache
+C:\Temp\MyGps2\GPSClientDataTest\bin\Debug\GPSClientDataTest.exe
+C:\Temp\MyGps2\GPSClientDataTest\bin\Debug\GPSClientDataTest.pdb
+C:\Temp\MyGps2\GPSClientDataTest\obj\Debug\GPSClientDataTest.csprojResolveAssemblyReference.cache
+C:\Temp\MyGps2\GPSClientDataTest\obj\Debug\GPSClientDataTest.Properties.Resources.resources
+C:\Temp\MyGps2\GPSClientDataTest\obj\Debug\GPSClientDataTest.csproj.GenerateResource.Cache
+C:\Temp\MyGps2\GPSClientDataTest\obj\Debug\GPSClientDataTest.exe
+C:\Temp\MyGps2\GPSClientDataTest\obj\Debug\GPSClientDataTest.pdb
